@@ -6,15 +6,13 @@ name := "hardfloat"
 
 scalaVersion := "2.13.8"
 
-scalacOptions += "-Xsource:2.11"
-
 resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots"),
   Resolver.sonatypeRepo("releases")
 )
 
-addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % "3.5.4" cross CrossVersion.full)
-libraryDependencies += "edu.berkeley.cs" %% "chisel3" % "3.5.4"
+addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % "3.5.6" cross CrossVersion.full)
+libraryDependencies += "edu.berkeley.cs" %% "chisel3" % "3.5.6"
 libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "3.2.0" % "test")
 Test / testForkedParallel := true
 
